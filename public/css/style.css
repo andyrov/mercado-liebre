@@ -16,9 +16,49 @@ header {
     width: 100vw;
 }
 
+header ul li a:link{
+    text-decoration: none;
+}
+header ul li a:visited{
+    text-decoration: none;
+}
+header ul li a:hover{
+    text-decoration: none;
+}
+header ul li a:active{
+    text-decoration: none;
+}
+
+.links {
+    display: flex;
+    align-items: center;;
+    width: 100%;
+    justify-content: space-around;
+    display: none;
+}
+
+.links ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.links ul li {
+    margin: 20px;
+}
+
 #top-header {
     display: flex;
-    flex-direction: row; 
+    flex-direction: column;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+}
+
+#manito {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 main {
@@ -37,6 +77,7 @@ section.banner img{
 
 .burger-menu{
     text-align: center;
+    display: block;
 }
 
 #burger-menu {
@@ -51,13 +92,15 @@ section.banner img{
 }
 
 #logo {
-    width: 50vw;
+    width: 100vw;
+    text-align: center;
+    padding: 15px;
 }
 
 #busqueda {
     background-color: white;
     border: solid 1px black;
-    width: 35vw;
+    width: 70vw;
     height: 30px;
     border-radius: 5px;
     padding: 5px;
@@ -72,6 +115,7 @@ section.banner img{
     align-items: center;
     align-content: center;
     margin: 10px;
+    justify-content: center;
 }
 
 #lupa {
@@ -242,13 +286,46 @@ footer i {
     color: #0044AA;
 }
 
+#copyright {
+    margin-top: 30px;
+}
+
 @media (min-width: 769px) {
     main article {
         width: 22%;
     }
 
+    #busqueda {
+        width: 35vw;
+    }
+
+    #logo {
+        width: 30vw;
+    }
+
+    header .links {
+        display: flex;
+    }
+
+    #top-header{
+        flex-direction: row;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
     .form input{
         width: 40vw;
+    }
+
+    .footer-flex {
+       display: flex; 
+    }
+
+    #copyright {
+        text-align: left;
+        margin-top: 50px;
     }
 }
 
