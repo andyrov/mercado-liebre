@@ -1,0 +1,255 @@
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #EAC926;
+    padding: 10px;
+    width: 100vw;
+}
+
+#top-header {
+    display: flex;
+    flex-direction: row; 
+}
+
+main {
+    width: 100vw;
+}
+
+header p {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+.burger-menu{
+    text-align: center;
+}
+
+#burger-menu {
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px;
+    padding: 10px;
+    width: 40px;
+}
+
+#logo {
+    width: 50vw;
+}
+
+#busqueda {
+    background-color: white;
+    border: solid 1px black;
+    width: 35vw;
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#buscar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    margin: 10px;
+}
+
+#lupa {
+    background-color: #ebebeb;
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 1px;
+    margin: 3px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+}
+
+p {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.ultima-vista  {
+    width: 100%;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ofertas {
+    width: 100%;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main article {
+    width: 40%;
+    margin: 10px;
+    background-color: white;
+    padding: 15px;   
+}
+
+main article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+}
+
+main article:hover #camion{
+    transform: rotate(-90deg);
+    transition: 1s;
+}
+
+h2 {
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.imagen {
+    width: 100%;
+}
+
+.caja {
+    width: 100%;
+    border-top: solid 1px #666;
+    padding: 5px;
+    position: relative;
+}
+
+main h2 {
+    margin: 20px;
+    color: #666;
+}
+
+main section #camion{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    color: #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+}
+
+
+
+
+.precio {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.descuento {
+    font-size: 16px;
+    color: #39b54a;
+}
+
+.descripciones {
+    font-size: 16px;
+    display: none;
+}
+
+main article:hover .descripciones {
+    display: block;
+}
+
+#formulario {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.form input {
+    width: 60vw;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    border: solid 2px rgb(197, 197, 197);    
+}
+
+.form input:focus {
+    box-shadow: 0px 0px 10px rgb(170, 170, 170);
+    outline: none;
+    border: solid 2px rgb(137, 137, 137);
+    transition: 0.5s;
+}
+
+.checkbox {
+    justify-content: center;
+    margin: 5px;
+}
+
+button {
+    background-color: rgb(196, 196, 196);
+    padding: 12px;
+    border-radius: 7px;
+    margin: 10px;
+    border: solid 2px #b9b9b9;
+}
+
+button:hover {
+    background-color: #b9b9b9;
+    padding: 12px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px rgb(190, 190, 190);
+}
+
+
+footer {
+    text-align: center;
+    background-color: white;
+    margin-block-start: -5px;
+    width: 100vw;
+    margin-top: 40px;
+    padding: 40px;
+}
+
+footer i {
+    margin: 15px;
+    font-size: 30px;
+    color: #0044AA;
+}
+
+@media (min-width: 769px) {
+    main article {
+        width: 22%;
+    }
+
+    .form input{
+        width: 40vw;
+    }
+}
+
+
